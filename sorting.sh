@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -x
 
 echo "Arthmetic Computation & Sorting"
 read -p "Enter three numbers: " a b c
@@ -13,10 +13,8 @@ do
 result[$i]=${compute[r$i]}
 done
 
-echo "$a+$b*$c = ${result[1]}" 
+echo "$a+$b*$c = ${result[1]}"
 echo "$a*$b+$c = ${result[2]}"
 echo "$c+$a/$b = ${result[3]}"
 echo "$a%$b+$c = ${result[4]}"
-
-
 
