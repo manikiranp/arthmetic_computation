@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "Arthmetic Computation & Sorting"
 read -p "Enter three numbers: " a b c
@@ -28,5 +28,13 @@ do
 	fi
 	done
 done
-echo "Decending order: ${result[*]}"
-
+echo "Decending order: "
+for (( i=1; i<=4; i++ ))
+do
+echo ${result[i]}
+done
+echo "Ascending order: "
+for (( i=4; i>=1; i-- ))
+do
+echo ${result[i]}
+done
