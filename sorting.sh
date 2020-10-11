@@ -12,18 +12,11 @@ for (( i=1; i<=4; i++ ))
 do
 result[$i]=${compute[r$i]}
 done
-<<<<<<< HEAD
-
 echo "$a+$b*$c = ${result[1]}"
-=======
-echo "$a+$b*$c = ${result[1]}" 
->>>>>>> sorting1
 echo "$a*$b+$c = ${result[2]}"
 echo "$c+$a/$b = ${result[3]}"
 echo "$a%$b+$c = ${result[4]}"
 
-<<<<<<< HEAD
-=======
 for (( i=1; i<5; i++ ))
 do
 	for (( j=1; j<4; j++ ))
@@ -36,4 +29,4 @@ do
 	done
 done
 echo "Decending order: ${result[*]}"
->>>>>>> sorting1
+
