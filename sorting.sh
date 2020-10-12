@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "Arthmetic Computation & Sorting"
 read -p "Enter three numbers: " a b c
@@ -10,9 +10,12 @@ compute[r4]=`perl -E "say $a%$b+$c"`
 
 for (( i=1; i<=4; i++ ))
 do
-result[$i]=${compute[r$i]}
+result[i]=${compute[r$i]}
 done
 
+echo "key values of dictionary:" ${!compute[@]}
+echo "key values of array: " ${!result[@]}
+echo "values from array:" ${result[@]}
 echo "$a+$b*$c = ${result[1]}"
 echo "$a*$b+$c = ${result[2]}"
 echo "$c+$a/$b = ${result[3]}"
